@@ -26,9 +26,9 @@
           <p class="small-text">Total Followers: 23,004</p>
         </div>
         <div class="header-button-container">
-          <p class="small-text">Dark Mode</p>
-          <div class="button">
-            <div class="button-switch"></div>
+          <p class="small-text" id="theme-text">Dark Mode</p>
+          <div class="button" id="button-switch">
+            <div class="button-switch" id="switch"></div>
           </div>
         </div>
       </header>
@@ -46,7 +46,7 @@
             </div>
             <div class="stats-growth-number">
               <img src="./images/icon-up.svg" alt="up-arrow" />
-              <span>12 Today</span>
+              <span class="up-stat">12 Today</span>
             </div>
           </article>
           <article class="stats-item twitter">
@@ -212,6 +212,8 @@
         >. <br />
         Coded by <a href="https://github.com/abulnes16">@abulnes16</a>.
       </footer>
+
+      <script src="./js/controller.js"></script>
     </div>
   </body>
 </html>
