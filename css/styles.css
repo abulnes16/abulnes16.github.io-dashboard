@@ -5,6 +5,7 @@ body {
     background-color: hsl(230, 17%, 14%);
     color: hsl(0, 0%, 100%); 
     margin: 40px 20px;
+    position: relative;
 }
 
 .small-text {
@@ -12,6 +13,18 @@ body {
     color: hsl(228, 34%, 66%);
     font-weight: bold;
 }
+
+.up-stat {
+    font-weight: bold;
+    color: hsl(163, 72%, 41%);
+}
+
+.down-stat {
+    font-weight: bold;
+    color: hsl(356, 69%, 56%);
+}
+
+
 
 /*---------------Header Styles---------------- */
 
@@ -131,22 +144,72 @@ body {
 
 .stats-item .stats-growth-number span {
     font-size: 0.6em;
-    font-weight: bold;
     margin-left: 3px;
 }
 
-.up-stat {
-    color: hsl(163, 72%, 41%);
+.main-overview {
+    margin-top: 40px;
 }
 
-.down-stat {
-    color: hsl(356, 69%, 56%);
+.overview-metric-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
 }
+
+.metric-item {
+    display: flex;
+    flex-direction: column;
+    background-color:hsl(228, 28%, 20%);
+    border-radius: 5px;
+    padding: 20px 30px;
+    padding-left: 20px; 
+}
+
+.metric-item .metric-title {
+    display: inherit;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.metric-title p {
+    margin: 0;
+}
+
+.metric-item .metric-data {
+    display: inherit;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.metric-item .metric-data p {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin:0;
+}
+
+.metric-item .metric-data span {
+    
+    font-size: 0.6em;
+}
+.metric-item .metric-data span img {
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+
+
+
 
 .attribution {
+    background-color: hsl(228, 28%, 20%);
     font-size: 11px;
     text-align: center;
+    margin-top:50px;
+    padding: 10px;
+    border-radius: 5px;
   }
   .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(228, 34%, 66%);
   }
