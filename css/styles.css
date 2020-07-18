@@ -6,10 +6,11 @@ body {
     color: hsl(0, 0%, 100%); 
     margin: 40px 20px;
     position: relative;
+    font-size: 14px;
 }
 
 .small-text {
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: hsl(228, 34%, 66%);
     font-weight: bold;
 }
@@ -22,6 +23,22 @@ body {
 .down-stat {
     font-weight: bold;
     color: hsl(356, 69%, 56%);
+}
+
+.light-bg {
+    background-color:  hsl(0, 0%, 100%);
+}
+
+.light-card {
+   background-color:  hsl(227, 47%, 96%);
+}
+
+.light-highlight-text {
+    color: hsl(228, 12%, 44%);
+}
+
+.light-text {
+   color: hsl(230, 17%, 14%);
 }
 
 
@@ -143,8 +160,9 @@ body {
 }
 
 .stats-item .stats-growth-number span {
-    font-size: 0.6em;
+    font-size: 0.7em;
     margin-left: 3px;
+    font-weight: bold;
 }
 
 .main-overview {
